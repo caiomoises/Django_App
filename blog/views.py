@@ -7,12 +7,12 @@ def blog(request):
     print('blog')
     return render(
         request,
-        'blog.html',
+        'blog/index.html',
                   )
 
 def exemplo(request):
     print('Exemplo')
     return render(
         request,
-        'exemplo.html',
+        'blog/exemplo.html',
     )

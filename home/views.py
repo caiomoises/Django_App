@@ -7,5 +7,5 @@ def home(request):
     print('HOME')
     return render(
         request,
-        'home.html'
+        'home/index.html'
                   )
