@@ -1,0 +1,16 @@
+body {
+    animation: changeColor 5s linear infinite; /* 5s é a duração da animação, você pode ajustá-la */
+  }
+  
+  @keyframes changeColor {
+    0% {
+      background-color: rgb(255, 0, 0); /* Cor inicial: vermelho */
+    }
+    50% {
+      background-color: rgb(0, 0, 255); /* Cor intermediária: azul */
+    }
+    100% {
+      background-color: rgb(255, 0, 0); /* Cor final: vermelho novamente */
+    }
+  }
+  
