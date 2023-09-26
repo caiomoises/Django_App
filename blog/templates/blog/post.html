@@ -1,0 +1,17 @@
+{% extends 'global/base.html' %} {% comment "EXECUTA A ESTENSÃO DO TEMA BASE" %}{% endcomment %}
+
+{% block texto %} {{ text }} {% endblock texto %} {% comment "EXECUTA BLOCOS" %}{% endcomment %}
+
+{% block posts %}
+    <article class="single-post">
+        <header>
+        <h1 class="post__title">
+            <a href="{% url "blog:post" post.id %}">
+            {{ post.title }}
+            </a>
+        </h1>
+        </header>
+        <div class="post__body">{{ post.body }}</div>
+    </article>
+{% endblock posts %}
+    

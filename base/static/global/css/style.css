@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+a {
+  color: rgb(59, 122, 240);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(59, 122, 240);
+  text-decoration: underline;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -30,8 +39,24 @@ body {
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 10%);
 }
 
+.menu {
+  background: #000;
+  padding: 1.5rem;
+}
+
+.menu_links {
+  list-style: none;
+  display: flex;
+}
+
+.menu_links a {
+  color: #fff;
+  padding: 1.5rem;
+  /* background-color: red; */
+}
+
 @media (min-width: 600px) {
-  .content {
+  .content:not(:has(.single-post)) {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
   }
 }
