@@ -1,18 +1,22 @@
 # from django.http import HttpResponse
+from blog.data import posts
 from django.shortcuts import render
 
 # Create your views here.
 
 def blog(request):
     print('blog')
+
     context = {
-        'text' : 'Olá blog'
+        'text' : 'Blog notícias', 
+        'posts' : posts 
     }
+
     return render(
         request,
         'blog/index.html',
-        context,
-                  )
+        context       
+    )
 
 def exemplo(request):
     print('Exemplo')

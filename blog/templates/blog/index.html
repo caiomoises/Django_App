@@ -1,5 +1,10 @@
 {% extends 'global/base.html' %} {% comment "EXECUTA A ESTENSÃO DO TEMA BASE" %}{% endcomment %}
 
-{% block texto %} 
-    {{ text }}
-{% endblock texto %} {% comment "EXECUTA BLOCOS" %}{% endcomment %}
+{% block texto %} {{ text }} {% endblock texto %} {% comment "EXECUTA BLOCOS" %}{% endcomment %}
+
+{% block posts %}
+    {% for post in posts %}
+        {% include "global\partials\postblock.html" %}
+    {% endfor %}
+{% endblock posts %}
+    
