@@ -52,7 +52,7 @@ body {
 .menu_links a {
   color: #fff;
   padding: 1.5rem;
-  /* background-color: red; */
+  background-color: green;
 }
 
 @media (min-width: 600px) {
